@@ -4,12 +4,13 @@
 [![Codewars Badge](https://www.codewars.com/users/Quinteroo/badges/large)](https://www.codewars.com/users/quinteroo)
 
 
-## Introducción
+## Introduction
 I love this platform; I feel it has been a very useful tool in my learning.
 In this repository, I leave all the problems I have solved at different kyu levels.
+Visit my profile! https://www.codewars.com/users/Quinteroo
 
 
-## Tecnologías utilizadas
+## Technologies Used
 - javaScript
 
 >[!NOTE]
