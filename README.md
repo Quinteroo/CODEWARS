@@ -1,4 +1,3 @@
-
 # CODEWARS KATAS 
 
 [![Codewars Badge](https://www.codewars.com/users/Quinteroo/badges/large)](https://www.codewars.com/users/quinteroo)
