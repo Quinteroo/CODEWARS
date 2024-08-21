@@ -10,7 +10,7 @@ Visit my profile! https://www.codewars.com/users/Quinteroo
 
 
 ## Technologies Used
-- javaScript
+- JavaScript
 
 >[!NOTE]
 > You can find the URL, statement, solution, and tests for the katas, as well as code from other programmers that inspired me to find the solution.
