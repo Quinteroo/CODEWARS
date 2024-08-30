@@ -50,6 +50,8 @@ function comp(array1, array2) {
   let bSorted = array2.sort()
 
 
+  console.log("hola");
+
 
   return (JSON.stringify(aSorted) === JSON.stringify(bSorted)) ? true : false
 }
