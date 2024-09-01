@@ -12,25 +12,10 @@
 // With list [20,37,20,21] and number 1, the result would be [20,37,21].
 
 
-//! ESTO ESTÁ MAL
 function deleteNth(arr, n) {
-
-  let rep = {};
-
-  arr.forEach(function (e) {
-    rep[e] = (rep[e] || 0) + 1
-  });  //! TE DEVUELVE UN OBJETO PERO CON LOS KEY ORDENADOS DE MAYOR A MENOR
-
-  for (const key in rep) {
-    if (rep[key] > n) {
-
-      rep[key] = n
-    }
-  }
-
-  const keysArray = Object.keys(rep);
-
-  return keysArray
-
-
+  let count = {};
+  return arr.filter((x) => {
+    count[x] = (count[x] || 0) + 1;
+    return count[x] <= n;
+  });
 }
