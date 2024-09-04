@@ -30,28 +30,22 @@
 
 function longestConsec(strarr, k) {
   let n = strarr.length
-
   if (n === 0 || k > n || k <= 0) return ""
 
   let longestWord = ""
 
+
   for (let i = 0; i < strarr.length; i++) {
-    if (strarr[i].length > longestWord.length) {
-      longestWord = strarr[i]
+    let index = i
+    let e = strarr.slice(i, k + i).join("")
+
+    if (e.length > longestWord.length) {
+      longestWord = e
     }
+
   }
 
-  let indexL = strarr.indexOf(longestWord)
-
-  // Aseguramos que no haya índices negativos
-  let leftStart = Math.max(0, indexL - k);
-  let left = strarr.slice(leftStart, indexL);
-
-  let rigth = strarr.slice(indexL, k + 1)
-
-
-
-  return (left.length > rigth.length) ? left.join("") : rigth.join("")
+  return longestWord
 }
 
 
