@@ -35,7 +35,24 @@ function findMissingLetter(arr) {
 
 }
 
+Desglose:
+arr2.filter(e => ...):
 
+filter() es un método que crea un nuevo array con todos los elementos que pasen una determinada condición (retornando true).
+En este caso, se está filtrando cada elemento e de arr2.
+arrLowerCase.indexOf(e) > -1:
+
+indexOf(e) busca el índice de e en el array arrLowerCase.
+Si el elemento e está presente en arrLowerCase, indexOf devolverá su índice (un valor mayor o igual a 0).
+Si e no está presente, devolverá -1.
+> -1 ? false : true:
+
+Condición ternaria: Esta expresión verifica si el elemento e está presente en arrLowerCase.
+Si arrLowerCase.indexOf(e) > -1 es verdadero (es decir, e está en arrLowerCase), la condición devuelve false, lo que significa que el elemento no será incluido en arr3.
+Si arrLowerCase.indexOf(e) === -1 (es decir, e no está en arrLowerCase), devuelve true, lo que significa que el elemento sí será incluido en arr3.
+
+
+  
 //! OTRO EJEMPLO, MUY INTELIGENTE PONER EL DOBLE ALFABETO
 const findMissingLetter = (array) => {
   const alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
